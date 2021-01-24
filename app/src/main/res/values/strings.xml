@@ -1,0 +1,718 @@
+<resources>
+    <string name="app_name">JoCare</string>
+    //Medication
+    <string name="medication_reminder">Medication Reminder</string>
+    <string-array name="TimesDay">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="DaysWeek">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    //Sign In
+    <string name="forget"><u>Forget Password ?</u></string>
+    <string name="jocare"><b>JoCare</b></string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="pleaselogin">Please log in with your account to continue</string>
+    <string name="or">OR</string>
+    //Sign Up
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="Emr">Emergency Number</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="already">Already have an account </string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Doctor</string>
+    <string name="national_id">National ID</string>
+    <string name="role">Role</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password:</string>
+    //Panic Button
+    <string name="panicHome">When you are in a need for a help just click the image</string>
+    //More Fragment
+    <string name="pinfo">Personal Information</string>
+    <string name="pan">Panic Button</string>
+    <string name="panic">Please enter your emergency numbers :</string>
+    <string name="about">About JoCare</string>
+    <string name="help">Disclaimer</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="out">Logout</string>
+    <string name="more">More</string>
+    //Care guidelines
+    <string name="careG">Care Guidelines</string>
+    //hair care
+    <string name="hairC">Hair Care</string>
+    <string name="hair_care">Hair Care</string>
+    <string name="hair1">Hair Care :</string>
+    <string name="hair2">How to Maintain Healthy Hair :</string>
+    <string name="hair3">Hair care is an overall term for hygiene and cosmetology involving the hair which grows from the human scalp, and to a lesser extent facial, pubic and other body hair. Hair care routines differ according to an individual\'s culture and the physical characteristics of one\'s hair. Hair may be colored, trimmed, shaved, plucked or otherwise removed with treatments such as waxing, sugaring and threading. Hair care services are offered in salons, barbershops and day spas, and products are available commercially for home use. Laser hair removal and electrolysis are also available, though these are provided (in the US) by licensed professionals in medical offices or speciality spas.</string>
+    <string name="hair4">1) It\'s normal to lose 100 to 150 strands of hair a day so don\'t panic when you see a small bunch crawling across your tiled floor.\n2) Comb wet hair with extreme care because they\'re fragile and prone to breakage. Take a broad toothed comb and run it from the roots to the ends of your hair as gently as possible.\n3) Trim your hair every few weeks to get rid of those brown and rough split ends. Cut about 1/4th an inch of your hair every 6 to 8 weeks to avoid the split ends to grow out again.\n4) Don\'t wash your hair everyday and whenever you do, apply some conditioner on the ends. Try and use the same brand of shampoo and conditioner.\n5) Rinse the conditioner off with cold water as it is good for both strength and shine.\n6) Unlike the labels on the back of our food items, the labels on the back of our shampoos are mostly left unread. In the last few years, there has been a lot of focus on sulfate in shampoos. What are sulfates? They\'re the reason your shampoo lathers the way it does. They clean your scalp and hair, departing the dirt from it. But some researchers also suggest that they strip your hair of essential oils. They\'re also why your eye stings when shampoo runs down the side of your face. If you feel any kind of irritation on the scalp or find your hair drying up over time then try and buy a shampoo that\'s sulfate-free.\n7) If you\'ve got dry hair then it\'s best to avoid colouring. However, if you can\'t resist that gorgeous shade of brown, especially under the winter sun then follow this clever advise shared on the blog Free People. Use lemon, chamomile tea or honey as they work as great hair lighteners. You can add lemon juice to water and spray it over your hair when you\'re heading out. You can rinse your hair with brewed chamomile tea after you wash them with shampoo or add honey to the water you use to wash your hair.</string>
+    //Body Care
+    <string name="bodyCare">Body Care</string>
+    <string name="b1">Body Care :</string>
+    <string name="b2">While slathering on a smattering of serums to my face one evening, as per usual, I suddenly felt a pang of sadness for my body. Somehow, the complexion always steals the self-care spotlight, while the rest of the body gets forgotten. But skin doesn’t end at the décolletage. Despite knowing this common sense, I—and plenty of other people that I know, TBH—diligently treat the skin on the face and let the rest suffer in silence, not even applying a drop of moisturizer to parched (not to mention itchy) limbs. It’s quite silly, really.</string>
+    <string name="b3">Why Is Body Care Important :</string>
+    <string name="b4">Proper skin care is important because our skin is the largest barrier against infection that we have. Keeping our skin healthy and moist helps keep this barrier strong.\nUsing a proper skin care regimen daily can help preserve this important protective layer.</string>
+    //Skin Care
+    <string name="skinCare">Skin Care</string>
+    <string name="skin1">Dermatologist Recommendations :</string>
+    <string name="skin2">To maintain healthy skin, dermatologists recommend the following tips:\n\n1) Wear sunscreen daily.\n2) Stay out of tanning beds.\n3) Simplify your skin care routine.\n4) Choose skin care products formulated for your skin type.\n5) Treat your lips.\n6) Keep your hands off your face.\n7) Check your skin regularly.</string>
+    //Dental care
+    <string name="dentalCare">Dental Care</string>
+    <string name="dental1">Dental Care :</string>
+    <string name="dental2">The American Dental Association has recommended visiting a dentist every six months for checkups and cleanings is essential. Therefore, you will have to decide how often you need to get the dental care recommended. The ADA has made its recommendations for maintaining optimal oral health as determined by a dentist. This indicates that while you can follow the general guideline to visit your dentist every six months it is possible that you may have to make additional visits depending on the condition of your oral health.</string>
+    <string name="dental3">Recommendations for Routine Cleanings :</string>
+    <string name="dental4">Routine dental care will be available with professional teeth cleaning. It is one of the best methods for dental patients to prevent the diagnosis of oral problems. The dentists offering routine dental care in Omaha, NE recommend cleanings for their patient’s teeth every six months. However many patients visit them routinely and therefore will only need cleanings once a year. The regular visits of the patient to the dentist would have benefited the patient and allowed them to have a healthy mouth preventing the need to have their teeth cleaned as often as the people that do not receive dental care routinely.</string>
+    //ASk blood
+    <string name="askB">Ask For Blood</string>
+    <string name="ifUN">When you are in a need for blood just click the image</string>
+    //Personal Information
+    <string-array name="CivilStatus">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+    </string-array>
+    <string-array name="EmpStatus">
+        <item>Student</item>
+        <item>Full-Time Contract</item>
+        <item>Part-Time Contract</item>
+        <item>Unemployed</item>
+    </string-array>
+    //About JoCare
+    <string name="aboutCare">Our project is called JoCare, It is a product based application that will connect patients medical records between hospitals (private and governmental)and private clinics by providing doctors with the medical history of the patients, like previous surgeries, terminal illnesses, allergies ,the medical history of the family, childhood diseases ,social history, blood type and obstetric history (for women) . Etc. which in short is called Electronic medical record management and exchange. And all that is achieved by keeping the doctors and patients in contact by using the application, for immediate advice, simple diagnosis or prescriptions.
+        Using the application will help doctors with emergency cases, which will result in reducing time for quick diagnoses and taking quick actions in order to save the life of the patients. Therefore, our application will be directly affecting the doctor’s decision making and actions regarding the patient’s case.
+        The JoCare application will be divided into two sections, the first section will be used by authorized hospitals, private clinics and doctors as we discussed above. And the second section will be used by the public.
+        The public use will be restricted to guide them in different situations where they must take actions in order to help others who are in need for simple medical attention for example (if someone has epileptic fit).
+        Patients personal profiles, medicine description and medical history records will not be seen by other patients and that is for protecting our patient’s privacy.
+    </string>
+    //Privacy Policy
+    <string name="Privacy">Privacy Policy</string>
+    <string name="privacyPolicy">Effective date: 2020-12-18
+
+1. Introduction
+
+Welcome to JoCare.
+
+JoCare (“us”, “we”, or “our”) operates JoCare.app (hereinafter referred to as “Service”).
+
+Our Privacy Policy governs your visit to JoCare.app, and explains how we collect, safeguard and disclose information that results from your use of our Service.
+
+We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.
+
+Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy constitutes your agreement with us (“agreement”).
+
+2. Definitions
+
+SERVICE means the JoCare.app website operated by JoCare.
+
+PERSONAL DATA means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).
+
+USAGE DATA is data collected automatically either generated by the use of Service or from Service infrastructure itself (for example, the duration of a page visit).
+
+COOKIES are small files stored on your device (computer or mobile device).
+
+DATA CONTROLLER means a natural or legal person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal data are, or are to be, processed. For the purpose of this Privacy Policy, we are a Data Controller of your data.
+
+DATA PROCESSORS (OR SERVICE PROVIDERS) means any natural or legal person who processes the data on behalf of the Data Controller. We may use the services of various Service Providers in order to process your data more effectively.
+
+DATA SUBJECT is any living individual who is the subject of Personal Data.
+
+THE USER is the individual using our Service. The User corresponds to the Data Subject, who is the subject of Personal Data.
+
+3. Information Collection and Use
+
+We collect several different types of information for various purposes to provide and improve our Service to you.
+
+4. Types of Data Collected
+
+Personal Data
+
+While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (“Personal Data”). Personally identifiable information may include, but is not limited to:
+
+0.1. Email address
+
+0.2. First name and last name
+
+0.3. Phone number
+
+0.4. Address, Country, State, Province, ZIP/Postal code, City
+
+0.5. Cookies and Usage Data
+
+We may use your Personal Data to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link.
+
+Usage Data
+
+We may also collect information that your browser sends whenever you visit our Service or when you access Service by or through any device (“Usage Data”).
+
+This Usage Data may include information such as your computer’s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+When you access Service with a device, this Usage Data may include information such as the type of device you use, your device unique ID, the IP address of your device, your device operating system, the type of Internet browser you use, unique device identifiers and other diagnostic data.
+
+Tracking Cookies Data
+
+We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.
+
+Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service.
+
+You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
+
+Examples of Cookies we use:
+
+0.1. Session Cookies: We use Session Cookies to operate our Service.
+
+0.2. Preference Cookies: We use Preference Cookies to remember your preferences and various settings.
+
+0.3. Security Cookies: We use Security Cookies for security purposes.
+
+0.4. Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.
+
+Other Data
+
+While using our Service, we may also collect the following information: sex, age, date of birth, place of birth, passport details, citizenship, registration at place of residence and actual address, telephone number (work, mobile), details of documents on education, qualification, professional training, employment agreements, NDA agreements, information on bonuses and compensation, information on marital status, family members, social security (or other taxpayer identification) number, office location and other data.
+
+5. Use of Data
+
+JoCare uses the collected data for various purposes:
+
+0.1. to provide and maintain our Service;
+
+0.2. to notify you about changes to our Service;
+
+0.3. to allow you to participate in interactive features of our Service when you choose to do so;
+
+0.4. to provide customer support;
+
+0.5. to gather analysis or valuable information so that we can improve our Service;
+
+0.6. to monitor the usage of our Service;
+
+0.7. to detect, prevent and address technical issues;
+
+0.8. to fulfil any other purpose for which you provide it;
+
+0.9. to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;
+
+0.10. to provide you with notices about your account and/or subscription, including expiration and renewal notices, email-instructions, etc.;
+
+0.11. to provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information;
+
+0.12. in any other way we may describe when you provide the information;
+
+0.13. for any other purpose with your consent.
+
+6. Retention of Data
+
+We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+
+We will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.
+
+7. Transfer of Data
+
+Your information, including Personal Data, may be transferred to – and maintained on – computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction.
+
+If you are located outside Jordan and choose to provide information to us, please note that we transfer the data, including Personal Data, to Jordan and process it there.
+
+Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+
+JoCare will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.
+
+8. Disclosure of Data
+
+We may disclose personal information that we collect, or you provide:
+
+0.1. Business Transaction.
+
+If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data may be transferred.
+
+0.2. Other cases. We may disclose your information also:
+
+0.2.1. to our subsidiaries and affiliates;
+
+0.2.2. to contractors, service providers, and other third parties we use to support our business;
+
+0.2.3. to fulfill the purpose for which you provide it;
+
+0.2.4. for the purpose of including your company’s logo on our website;
+
+0.2.5. for any other purpose disclosed by us when you provide the information;
+
+0.2.6. with your consent in any other cases;
+
+0.2.7. if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others.
+
+9. Security of Data
+
+The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
+
+10. Your Data Protection Rights Under General Data Protection Regulation (GDPR)
+
+If you are a resident of the European Union (EU) and European Economic Area (EEA), you have certain data protection rights, covered by GDPR.
+
+We aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
+
+If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please email us at JoCare@gmail.com.
+
+In certain circumstances, you have the following data protection rights:
+
+0.1. the right to access, update or to delete the information we have on you;
+
+0.2. the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;
+
+0.3. the right to object. You have the right to object to our processing of your Personal Data;
+
+0.4. the right of restriction. You have the right to request that we restrict the processing of your personal information;
+
+0.5. the right to data portability. You have the right to be provided with a copy of your Personal Data in a structured, machine-readable and commonly used format;
+
+0.6. the right to withdraw consent. You also have the right to withdraw your consent at any time where we rely on your consent to process your personal information;
+
+Please note that we may ask you to verify your identity before responding to such requests. Please note, we may not able to provide Service without some necessary data.
+
+You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data. For more information, please contact your local data protection authority in the European Economic Area (EEA).
+
+11. Your Data Protection Rights under the California Privacy Protection Act (CalOPPA)
+
+CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require a person or company in the United States (and conceivable the world) that operates websites collecting personally identifiable information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals with whom it is being shared, and to comply with this policy.
+
+According to CalOPPA we agree to the following:
+
+0.1. users can visit our site anonymously;
+
+0.2. our Privacy Policy link includes the word “Privacy”, and can easily be found on the home page of our website;
+
+0.3. users will be notified of any privacy policy changes on our Privacy Policy Page;
+
+0.4. users are able to change their personal information by emailing us at JoCare@gmail.com.
+
+Our Policy on “Do Not Track” Signals:
+
+We honor Do Not Track signals and do not track, plant cookies, or use advertising when a Do Not Track browser mechanism is in place. Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked.
+
+You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.
+
+12. Your Data Protection Rights under the California Consumer Privacy Act (CCPA)
+
+If you are a California resident, you are entitled to learn what data we collect about you, ask to delete your data and not to sell (share) it. To exercise your data protection rights, you can make certain requests and ask us:
+
+0.1. What personal information we have about you. If you make this request, we will return to you:
+
+0.0.1. The categories of personal information we have collected about you.
+
+0.0.2. The categories of sources from which we collect your personal information.
+
+0.0.3. The business or commercial purpose for collecting or selling your personal information.
+
+0.0.4. The categories of third parties with whom we share personal information.
+
+0.0.5. The specific pieces of personal information we have collected about you.
+
+0.0.6. A list of categories of personal information that we have sold, along with the category of any other company we sold it to. If we have not sold your personal information, we will inform you of that fact.
+
+0.0.7. A list of categories of personal information that we have disclosed for a business purpose, along with the category of any other company we shared it with.
+
+Please note, you are entitled to ask us to provide you with this information up to two times in a rolling twelve-month period. When you make this request, the information provided may be limited to the personal information we collected about you in the previous 12 months.
+
+0.2. To delete your personal information. If you make this request, we will delete the personal information we hold about you as of the date of your request from our records and direct any service providers to do the same. In some cases, deletion may be accomplished through de-identification of the information. If you choose to delete your personal information, you may not be able to use certain functions that require your personal information to operate.
+
+0.3. To stop selling your personal information. We don’t sell or rent your personal information to any third parties for any purpose. We do not sell your personal information for monetary consideration. However, under some circumstances, a transfer of personal information to a third party, or within our family of companies, without monetary consideration may be considered a “sale” under California law. You are the only owner of your Personal Data and can request disclosure or deletion at any time.
+
+If you submit a request to stop selling your personal information, we will stop making such transfers.
+
+Please note, if you ask us to delete or stop selling your data, it may impact your experience with us, and you may not be able to participate in certain programs or membership services which require the usage of your personal information to function. But in no circumstances, we will discriminate against you for exercising your rights.
+
+To exercise your California data protection rights described above, please send your request(s) by email: JoCare@gmail.com.
+
+Your data protection rights, described above, are covered by the CCPA, short for the California Consumer Privacy Act. To find out more, visit the official California Legislative Information website. The CCPA took effect on 01/01/2020.
+
+13. Service Providers
+
+We may employ third party companies and individuals to facilitate our Service (“Service Providers”), provide Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.
+
+These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+
+14. Analytics
+
+We may use third-party Service Providers to monitor and analyze the use of our Service.
+
+15. CI/CD tools
+
+We may use third-party Service Providers to automate the development process of our Service.
+
+16. Behavioral Remarketing
+
+We may use remarketing services to advertise on third party websites to you after you visited our Service. We and our third-party vendors use cookies to inform, optimise and serve ads based on your past visits to our Service.
+
+17. Links to Other Sites
+
+Our Service may contain links to other sites that are not operated by us. If you click a third party link, you will be directed to that third party’s site. We strongly advise you to review the Privacy Policy of every site you visit.
+
+We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+
+For example, the outlined privacy policy has been made using PolicyMaker.io, a free tool that helps create high-quality legal documents. PolicyMaker’s privacy policy generator is an easy-to-use tool for creating a privacy policy for blog, website, e-commerce store or mobile app.
+
+18. Children’s Privacy
+
+Our Services are not intended for use by children under the age of 18 (“Child” or “Children”).
+
+We do not knowingly collect personally identifiable information from Children under 18. If you become aware that a Child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from Children without verification of parental consent, we take steps to remove that information from our servers.
+
+19. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update “effective date” at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+20. Contact Us
+
+If you have any questions about this Privacy Policy, please contact us by email: JoCare@gmail.com.
+
+This Privacy Policy was created for JoCare.app by PolicyMaker.io on 2020-12-18.</string>
+    //Disclaimer
+    <string name="disc">Last updated: 2020-12-18
+
+WEBSITE DISCLAIMER
+
+The information provided by JoCare (“Company”, “we”, “our”, “us”) on JoCare.app (the “Site”) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+
+UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+
+EXTERNAL LINKS DISCLAIMER
+
+The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us.
+
+For example, the outlined Disclaimer has been created using PolicyMaker.io, a free web application for generating high-quality legal documents. PolicyMaker’s disclaimer generator is an easy-to-use tool for creating an excellent sample Disclaimer template for a website, blog, eCommerce store or app.
+
+WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
+
+PROFESSIONAL DISCLAIMER
+
+The Site can not and does not contain medical advice. The information is provided for general informational and educational purposes only and is not a substitute for professional medical advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of medical advice.
+
+Content published on JoCare.app is intended to be used and must be used for informational purposes only. It is very important to do your own analysis before making any decision based on your own personal circumstances. You should take independent medical advice from a professional or independently research and verify any information that you find on our Website and wish to rely upon.
+
+THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.
+
+TESTIMONIALS DISCLAIMER
+
+The Site may contain testimonials by users of our products and/or services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users, and may not necessarily be representative of all users of our products and/or services. We do not claim, and you should not assume that all users will have the same experiences.
+
+YOUR INDIVIDUAL RESULTS MAY VARY.
+
+The testimonials on the Site are submitted in various forms such as text, audio and/or video, and are reviewed by us before being posted. They appear on the Site verbatim as given by the users, except for the correction of grammar or typing errors. Some testimonials may have been shortened for the sake of brevity, where the full testimonial contained extraneous information not relevant to the general public.
+
+The views and opinions contained in the testimonials belong solely to the individual user and do not reflect our views and opinions.
+
+ERRORS AND OMISSIONS DISCLAIMER
+
+While we have made every attempt to ensure that the information contained in this site has been obtained from reliable sources, JoCare is not responsible for any errors or omissions or for the results obtained from the use of this information. All information in this site is provided “as is”, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability, and fitness for a particular purpose.
+
+In no event will JoCare, its related partnerships or corporations, or the partners, agents or employees thereof be liable to you or anyone else for any decision made or action taken in reliance on the information in this Site or for any consequential, special or similar damages, even if advised of the possibility of such damages.
+
+LOGOS AND TRADEMARKS DISCLAIMER
+
+All logos and trademarks of third parties referenced on JoCare.app are the trademarks and logos of their respective owners. Any inclusion of such trademarks or logos does not imply or constitute any approval, endorsement or sponsorship of JoCare by such owners.
+
+CONTACT US
+
+Should you have any feedback, comments, requests for technical support or other inquiries, please contact us by email: JoCare@gmail.com.
+
+This Disclaimer was created for JoCare.app by PolicyMaker.io on 2020-12-18.</string>
+    //Terms Conditions
+    <string name="Conditions">Last updated: 2020-12-18
+
+1. Introduction
+
+Welcome to JoCare (“Company”, “we”, “our”, “us”)!
+
+These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at JoCare.app (together or individually “Service”) operated by JoCare.
+
+Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.
+
+Your agreement with us includes these Terms and our Privacy Policy (“Agreements”). You acknowledge that you have read and understood Agreements, and agree to be bound of them.
+
+If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at JoCare@gmail.com so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service.
+
+2. Communications
+
+By using our Service, you agree to subscribe to newsletters, marketing or promotional materials and other information we may send. However, you may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or by emailing at JoCare@gmail.com.
+
+3. Contests, Sweepstakes and Promotions
+
+Any contests, sweepstakes or other promotions (collectively, “Promotions”) made available through Service may be governed by rules that are separate from these Terms of Service. If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy. If the rules for a Promotion conflict with these Terms of Service, Promotion rules will apply.
+
+4. Content
+
+Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material (“Content”). You are responsible for Content that you post on or through Service, including its legality, reliability, and appropriateness.
+
+By posting Content on or through Service, You represent and warrant that: (i) Content is yours (you own it) and/or you have the right to use it and the right to grant us the rights and license as provided in these Terms, and (ii) that the posting of your Content on or through Service does not violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person or entity. We reserve the right to terminate the account of anyone found to be infringing on a copyright.
+
+You retain any and all of your rights to any Content you submit, post or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service. However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.
+
+JoCare has the right but not the obligation to monitor and edit all Content provided by users.
+
+In addition, Content found on or through this Service are the property of JoCare or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.
+
+5. Prohibited Uses
+
+You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:
+
+0.1. In any way that violates any applicable national or international law or regulation.
+
+0.2. For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.
+
+0.3. To transmit, or procure the sending of, any advertising or promotional material, including any “junk mail”, “chain letter,” “spam,” or any other similar solicitation.
+
+0.4. To impersonate or attempt to impersonate Company, a Company employee, another user, or any other person or entity.
+
+0.5. In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
+
+0.6. To engage in any other conduct that restricts or inhibits anyone’s use or enjoyment of Service, or which, as determined by us, may harm or offend Company or users of Service or expose them to liability.
+
+Additionally, you agree not to:
+
+0.1. Use Service in any manner that could disable, overburden, damage, or impair Service or interfere with any other party’s use of Service, including their ability to engage in real time activities through Service.
+
+0.2. Use any robot, spider, or other automatic device, process, or means to access Service for any purpose, including monitoring or copying any of the material on Service.
+
+0.3. Use any manual process to monitor or copy any of the material on Service or for any other unauthorized purpose without our prior written consent.
+
+0.4. Use any device, software, or routine that interferes with the proper working of Service.
+
+0.5. Introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful.
+
+0.6. Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of Service, the server on which Service is stored, or any server, computer, or database connected to Service.
+
+0.7. Attack Service via a denial-of-service attack or a distributed denial-of-service attack.
+
+0.8. Take any action that may damage or falsify Company rating.
+
+0.9. Otherwise attempt to interfere with the proper working of Service.
+
+6. Analytics
+
+We may use third-party Service Providers to monitor and analyze the use of our Service.
+
+7. No Use By Minors
+
+Service is intended only for access and use by individuals at least eighteen (18) years old. By accessing or using Service, you warrant and represent that you are at least eighteen (18) years of age and with the full authority, right, and capacity to enter into this agreement and abide by all of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from both the access and usage of Service.
+
+8. Accounts
+
+When you create an account with us, you guarantee that you are above the age of 18, and that the information you provide us is accurate, complete, and current at all times. Inaccurate, incomplete, or obsolete information may result in the immediate termination of your account on Service.
+
+You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Service or a third-party service. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.
+
+We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.
+
+9. Intellectual Property
+
+Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of JoCare and its licensors. Service is protected by copyright, trademark, and other laws of and foreign countries. Our trademarks may not be used in connection with any product or service without the prior written consent of JoCare.
+
+10. Copyright Policy
+
+We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“Infringement”) of any person or entity.
+
+If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to JoCare@gmail.com, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”
+
+You may be held accountable for damages (including costs and attorneys’ fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through Service on your copyright.
+
+11. DMCA Notice and Procedure for Copyright Infringement Claims
+
+You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):
+
+0.1. an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright’s interest;
+
+0.2. a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;
+
+0.3. identification of the URL or other specific location on Service where the material that you claim is infringing is located;
+
+0.4. your address, telephone number, and email address;
+
+0.5. a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;
+
+0.6. a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.
+
+You can contact our Copyright Agent via email at JoCare@gmail.com.
+
+12. Error Reporting and Feedback
+
+You may provide us either directly at JoCare@gmail.com or via third party sites and tools with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service (“Feedback”). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.
+
+13. Links To Other Web Sites
+
+Our Service may contain links to third party web sites or services that are not owned or controlled by JoCare.
+
+JoCare has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
+
+For example, the outlined Terms of Use have been created using PolicyMaker.io, a free web application for generating high-quality legal documents. PolicyMaker’s Terms and Conditions generator is an easy-to-use free tool for creating an excellent standard Terms of Service template for a website, blog, e-commerce store or app.
+
+YOU ACKNOWLEDGE AND AGREE THAT COMPANY SHALL NOT BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY DAMAGE OR LOSS CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY SUCH CONTENT, GOODS OR SERVICES AVAILABLE ON OR THROUGH ANY SUCH THIRD PARTY WEB SITES OR SERVICES.
+
+WE STRONGLY ADVISE YOU TO READ THE TERMS OF SERVICE AND PRIVACY POLICIES OF ANY THIRD PARTY WEB SITES OR SERVICES THAT YOU VISIT.
+
+14. Disclaimer Of Warranty
+
+THESE SERVICES ARE PROVIDED BY COMPANY ON AN “AS IS” AND “AS AVAILABLE” BASIS. COMPANY MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THEIR SERVICES, OR THE INFORMATION, CONTENT OR MATERIALS INCLUDED THEREIN. YOU EXPRESSLY AGREE THAT YOUR USE OF THESE SERVICES, THEIR CONTENT, AND ANY SERVICES OR ITEMS OBTAINED FROM US IS AT YOUR SOLE RISK.
+
+NEITHER COMPANY NOR ANY PERSON ASSOCIATED WITH COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SERVICES. WITHOUT LIMITING THE FOREGOING, NEITHER COMPANY NOR ANYONE ASSOCIATED WITH COMPANY REPRESENTS OR WARRANTS THAT THE SERVICES, THEIR CONTENT, OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICES WILL BE ACCURATE, RELIABLE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT THE SERVICES OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE SERVICES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICES WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.
+
+COMPANY HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR PARTICULAR PURPOSE.
+
+THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+
+15. Limitation Of Liability
+
+EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS HARMLESS FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGE, HOWEVER IT ARISES (INCLUDING ATTORNEYS’ FEES AND ALL RELATED COSTS AND EXPENSES OF LITIGATION AND ARBITRATION, OR AT TRIAL OR ON APPEAL, IF ANY, WHETHER OR NOT LITIGATION OR ARBITRATION IS INSTITUTED), WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, OR ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING WITHOUT LIMITATION ANY CLAIM FOR PERSONAL INJURY OR PROPERTY DAMAGE, ARISING FROM THIS AGREEMENT AND ANY VIOLATION BY YOU OF ANY FEDERAL, STATE, OR LOCAL LAWS, STATUTES, RULES, OR REGULATIONS, EVEN IF COMPANY HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. EXCEPT AS PROHIBITED BY LAW, IF THERE IS LIABILITY FOUND ON THE PART OF COMPANY, IT WILL BE LIMITED TO THE AMOUNT PAID FOR THE PRODUCTS AND/OR SERVICES, AND UNDER NO CIRCUMSTANCES WILL THERE BE CONSEQUENTIAL OR PUNITIVE DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE PRIOR LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+
+16. Termination
+
+We may terminate or suspend your account and bar access to Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of Terms.
+
+If you wish to terminate your account, you may simply discontinue using Service.
+
+All provisions of Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+17. Governing Law
+
+These Terms shall be governed and construed in accordance with the laws of Jordan, which governing law applies to agreement without regard to its conflict of law provisions.
+
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have had between us regarding Service.
+
+18. Changes To Service
+
+We reserve the right to withdraw or amend our Service, and any service or material we provide via Service, in our sole discretion without notice. We will not be liable if for any reason all or any part of Service is unavailable at any time or for any period. From time to time, we may restrict access to some parts of Service, or the entire Service, to users, including registered users.
+
+19. Amendments To Terms
+
+We may amend Terms at any time by posting the amended terms on this site. It is your responsibility to review these Terms periodically.
+
+Your continued use of the Platform following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page frequently so you are aware of any changes, as they are binding on you.
+
+By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use Service.
+
+20. Waiver And Severability
+
+No waiver by Company of any term or condition set forth in Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Company to assert a right or provision under Terms shall not constitute a waiver of such right or provision.
+
+If any provision of Terms is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of Terms will continue in full force and effect.
+
+21. Acknowledgement
+
+BY USING SERVICE OR OTHER SERVICES PROVIDED BY US, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE AND AGREE TO BE BOUND BY THEM.
+
+22. Contact Us
+
+Please send your feedback, comments, requests for technical support by email: JoCare@gmail.com.
+
+These Terms of Service were created for JoCare.app by PolicyMaker.io on 2020-12-18.</string>
+    //NewsFeed
+    <string name="newsFeed">News Feed</string>
+    <string name="vaccines">How do COVID-19 vaccines compare with other existing vaccines?</string>
+    <string name="n1">The novelty of the COVID-19 vaccines may seem daunting for some, and it is natural for questions to arise on their effectiveness. In this feature, we examine the difference between effectiveness and efficacy, compare the COVID-19 frontrunner vaccines to other vaccines, such as the flu shot, and compare their safety considerations.
+As Pfizer/BioNTech roll out their COVID-19 vaccine throughout the United Kingdom and the United States, the world wonders how effective it will be.
+Looking at the three leading vaccines that we have previously reported on, Pfizer/BioNTech boasts 95% efficacy, the Oxford/AstraZeneca vaccine candidate has an average of 70% efficacy, while the Moderna vaccine candidate reportedly has 94.1% efficacy.
+But what does this say about their effectiveness? And how does it compare with vaccines against the flu, polio, and measles?</string>
+    <string name="n2">Effectiveness vs. efficacy — what is the difference?</string>
+    <string name="n3">Firstly, it is worth noting that “effectiveness” and “efficacy” are not the same. Despite news outlets frequently using them interchangeably, efficacy refers to how a vaccine performs under ideal lab conditions, such as those in a clinical trial. In contrast, effectiveness refers to how it performs in the real world
+In other words, in a clinical trial, a 90% efficacy means that there are 90% fewer cases of disease in the group receiving the vaccine compared with the placebo group.
+However, the participants chosen for a clinical trial tend to be healthier and younger than those in the general population, and they generally have no underlying conditions. Furthermore, researchers do not normally include certain groups in these studies, such as children or pregnant people.
+So, while a vaccine can prevent disease in a trial, we might see this effectiveness drop when administered to the wider population.
+However, that is not in itself a bad thing. </string>
+    <string name="n4">Flu shot effectiveness:</string>
+    <string name="n5">Vaccines do not need to have high effectiveness to save thousands of lives and prevent millions of disease cases.
+The popular flu shot, for example, has an effectiveness of 40­–60%, according to the Centers for Disease Control and Prevention (CDC).
+However, during 2018­–2019, it prevented around “4.4 million influenza illnesses, 2.3 million influenza-associated medical visits, 58,000 influenza-associated hospitalizations, and 3,500 influenza-associated deaths.”
+It is also worth noting that the flu vaccine’s effectiveness varies from season to season, due to the nature of the flu viruses circulating that year. Determining the precise rate of effectiveness can be challenging.
+Finally, it bears mentioning that the number of doses can also improve effectiveness for some vaccines. For the flu shot, two doses of the vaccine instead of one can offer a protection boost, but this benefit is limited to only a few specific groups, such as children or organ transplant recipients.
+The booster dose does not seem to benefit people over the age of 65 or those with a compromised immune system.
+By contrast, as we will see below, for vaccines, such as the ones against polio and measles, a higher number of doses is required to achieve peak effectiveness.</string>
+    <string name="total">COVID-19 live updates: Total number of cases passes 72.2 million</string>
+    <string name="e1">Today, Sandra Lindsay became the first healthcare worker to receive the Pfizer–BioNTech COVID-19 vaccine in New York. The intensive care unit nurse received the vaccine at Long Island Jewish Medical Center in Queens, one of the epicenters of COVID-19 earlier this year.</string>
+    <string name="e2">FDA issue emergency use authorization for COVID-19 vaccine:</string>
+    <string name="e3">On Friday, the Food and Drug Administration (FDA) issued emergency use authorization for the Pfizer-BioNTech vaccine. The FDA concluded that the “potential benefits [of the vaccine] outweigh the known and potential risks […].” The first shipments of the vaccine left FedEx and UPS facilities in Tennessee and Kentucky yesterday.</string>
+    <string name="e4">Study hints that supplements may reduce COVID-19 risk in females:</string>
+    <string name="e5">A recent study found small but significant decreases in the risk of SARS-CoV-2 infection among females who took multivitamins, vitamin D, omega-3 fatty acids, or probiotics. The study has not yet been through the peer review process and appears on the preprint server MedRxiv.
+Although the results seem hopeful, Naveed Sattar, a professor of metabolic medicine at the University of Glasgow, in the United Kingdom, who was not involved in the research, adds some perspective:
+“These are interesting results, but due to the way the study has been conducted, these data absolutely cannot tell us that taking such supplements ‘protects’ against infection [resulting in] COVID-19.”
+The scientists were surprised that the effect was only significant in females. They theorize that this might be because females have more robust immune systems. Alternately, they might be more likely to wear masks or wash their hands than males.
+Prof. Seif Shaheen, from Queen Mary University of London, adds further context: “A major concern is that these findings may be confounded by socioeconomic status, given that individuals of higher status are more likely to take supplements and are also less likely to become infected with SARS-CoV-2.”</string>
+    <string name="diabetes">Managing diabetes after incarceration: A difficult journey</string>
+    <string name="d1">Dr. Rodlescia Sneed is an assistant professor in the Division of Public Health at Michigan State University. Her work examines the health and well-being of economically vulnerable older adults, including those with a history of incarceration. In this Opinion piece, she explains why managing diabetes can be difficult for someone who has been incarcerated.For the average adult, a diabetes diagnosis is life-changing. Managing diabetes involves a daily routine that shifts toward remembering to take medication, check blood sugar, and monitor carbohydrate intake. 
+Frequent trips to multiple doctors’ offices become the norm, as regular foot checks, dental appointments, eye exams, and primary care visits are crucial for avoiding the complications of poorly managed disease.
+These complications can include gum disease, cardiovascular problems, nerve damage, kidney failure, blindness, and even amputation. Individuals who receive an early diagnosis and manage the disease well can expect to live as long as those without diabetes, but research has linked poor disease management to reduced life expectancy of up to 8 years.  
+For someone reentering society after being in prison, managing diabetes can be quite difficult. In the United States, more than 2 million people are incarcerated in jails and prisons on a given day, and nearly 5% of them have diabetes. 
+These individuals typically do not serve life sentences; rather, 95% eventually return to community settings that may not readily embrace them or their medical needs. 
+In the U.S., individuals who have been inmates in jails or prisons just once are seven times more likely to experience homelessness than the general population. Meanwhile, those who have been incarcerated two or more times are 13 times more likely than other people to lack housing.
+Individuals with a criminal history face numerous collateral consequences of conviction — legal restrictions that disqualify them from accessing a range of resources and opportunities upon release.  
+Unemployment is a major concern for people with a criminal history. According to the Prison Policy Initiative, individuals with a criminal history are nearly five times more likely to be unemployed than the general population. 
+Many employment sectors bar those with a criminal history, limiting their ability to earn the money necessary to afford adequate housing. Those who turn to low-income housing programs often face being denied access, as many public housing programs have strict eligibility criteria that exclude individuals with a criminal history. 
+This is true even for older adults. Many low-income senior housing assistance programs deny access to individuals with recent criminal convictions and permanently ban those with a history of criminal sexual conduct, even if the crime occurred decades earlier.
+Dr. Rodlescia Sneed is an assistant professor in the Division of Public Health at Michigan State University. Her work examines the health and well-being of economically vulnerable older adults, including those with a history of incarceration. In this Opinion piece, she explains why managing diabetes can be difficult for someone who has been incarcerated.
+Willie B. Thomas/Getty Images.
+For the average adult, a diabetes diagnosis is life-changing. Managing diabetes involves a daily routine that shifts toward remembering to take medication, check blood sugar, and monitor carbohydrate intake. 
+Frequent trips to multiple doctors’ offices become the norm, as regular foot checks, dental appointments, eye exams, and primary care visits are crucial for avoiding the complications of poorly managed disease. 
+Health inequities affect all of us differently. Visit our dedicated hub for an in-depth look at social disparities in health and what we can do to correct them.
+These complications can include gum disease, cardiovascular problems, nerve damage, kidney failure, blindness, and even amputation. Individuals who receive an early diagnosis and manage the disease well can expect to live as long as those without diabetes, but research has linked poor disease management to reduced life expectancy of up to 8 years.  
+For someone reentering society after being in prison, managing diabetes can be quite difficult. In the United States, more than 2 million people are incarcerated in jails and prisons on a given day, and nearly 5% of them have diabetes. 
+These individuals typically do not serve life sentences; rather, 95% eventually return to community settings that may not readily embrace them or their medical needs.   
+For example, taking medication every day requires having a safe place to live and store medications. This is not a given for formerly incarcerated people, many of whom often struggle simply to find a place to live. 
+In the U.S., individuals who have been inmates in jails or prisons just once are seven times more likely to experience homelessness than the general population. Meanwhile, those who have been incarcerated two or more times are 13 times more likely than other people to lack housing.
+Individuals with a criminal history face numerous collateral consequences of conviction — legal restrictions that disqualify them from accessing a range of resources and opportunities upon release.  
+Unemployment is a major concern for people with a criminal history. According to the Prison Policy Initiative, individuals with a criminal history are nearly five times more likely to be unemployed than the general population. 
+Many employment sectors bar those with a criminal history, limiting their ability to earn the money necessary to afford adequate housing. Those who turn to low-income housing programs often face being denied access, as many public housing programs have strict eligibility criteria that exclude individuals with a criminal history. 
+This is true even for older adults. Many low-income senior housing assistance programs deny access to individuals with recent criminal convictions and permanently ban those with a history of criminal sexual conduct, even if the crime occurred decades earlier.
+Proper management of a chronic health condition such as diabetes is a low priority for survival when a person is struggling simply to find a safe place to sleep at night.  
+Additionally, food insecurity complicates diabetes management for formerly incarcerated adults. Access to adequate quantities of nutritious food is crucial for effective diabetes management. 
+A diabetes-friendly diet restricts carbohydrate intake, as carbohydrate-rich foods often raise blood glucose levels higher and faster than foods rich in protein and fiber.
+Formerly incarcerated individuals, however, often report great difficulty in accessing healthful foods. Estimates of food insecurity among formerly incarcerated individuals returning to community settings are as high as 91%. 
+Among the many collateral consequences of criminal conviction in the U.S. are limitations on the receipt of federal supplemental nutrition assistance program benefits (i.e., SNAP or food stamps) for individuals convicted of certain criminal offenses.</string>
+    <string name="pollution">Is there a link between ocean pollution and damage to human health?</string>
+    <string name="p1">Human actions are causing widespread damage to ocean ecosystems and threatening human health, a new report suggests.
+An international team of researchers has highlighted the widespread damage human actions have caused to the world’s oceans, and in turn, to human health.
+The research, which appears in the Annals of Global Health, lays out a series of recommendations for alleviating these damaging effects.</string>
+    <string name="p2">Oceans and global health</string>
+    <string name="p3">The Earth’s oceans are crucial to sustaining life on the planet. They play a central role in adding oxygen into the atmosphere and absorbing carbon dioxide, helping to stabilize the effects of global heating.They provide food to billions of people, are central to the livelihoods of millions who live or work on or near them, and have an important role in providing several essential medicines.For people who live close to oceans — such as coastal communities, small-island communities, populations in the high Arctic, and peoples in parts of the global south — they are central to societal and cultural practices, traditions, and ways of life.However, the world’s oceans are under threat, primarily from the actions of humans. And as the health of oceans deteriorates, so too does humans’ health, particularly those people who live close to them.
+</string>
+    <string name="p4">Damage to oceans</string>
+    <string name="p5">The researchers behind the present study looked in detail at current scientific evidence demonstrating the crucial role the world’s oceans play in planetary health. They also looked at the key factors that are damaging the health of the oceans.
+They found that human actions are central to this damage in a complex manner, whereby specific destructive actions exist in a relationship with other damaging actions.
+Sea level rises and increasingly violent coastal storms threaten the well-being of coastal populations. Increasing levels of atmospheric carbon dioxide make the oceans acidic, which destroys the crucial foundations of ocean food chains.
+In addition, the effects of climate change exacerbate another significant cause of damage to the oceans’ health: pollution.
+</string>
+    <string name="leanOut">COVID-19: Is it time for male leaders to ‘lean out’?</string>
+    <string name="l1">Leaving women out of COVID-19 decision-making is not just bad for women — it’s bad for everyone. Research shows that achieving gender parity correlates with better outcomes in the pandemic overall, yet a new analysis found that only 3.5% of COVID-19 decision-making bodies have an equitable number of men and women. What does this mean for healthcare? We spoke to a panel of experts to find out.
+Past outbreaks of diseases such as Zika and Ebola have taught us the same lesson time and time again: In situations of crisis, women’s rights and needs are pushed aside because they are seen as a bonus or privilege rather than a necessity.
+The trajectory is always the same — women make up the vast majority of care workers and are also overwhelmed with informal care duties, yet their contribution to decision-making is lacking. According to recent research, only 3.5% of 115 COVID-19 decision-making groups across 87 countries contained an equitable number of men and women.
+</string>
+    <string name="l2">What inspired you to carry out your analysis? </string>
+    <string name="l3">While current evidence has been showing that COVID-19 has been more severe for men, we do always know that historically women are disproportionately affected by health emergencies, and that was one of the big, big motivations for even doing this research — because we’ve seen statistically that women have this kind of triple burden in terms of economic and social impact, and yet they’re often [absent from] leadership.
+</string>
+    <string name="l4">What are the implications of this gender imbalance for vaccine research and clinical trials? </string>
+    <string name="l5">There is a lot of focus now on the vaccine as a solution, […] but it shows another important problem that we have had in medical science for a long time: That often in clinical trials, there is not an equal representation, which is an issue due to mostly biological factors — like women having different hormonal systems and different immune systems than men.
+[And if women] are not represented, especially, for example, in vaccine trials, it could be that something is developed that has not the same effect on men and women, or it has more side effects for one or the other. And interestingly enough, this is a very well-researched problem, so it should be on the agenda of every researcher in the field, but it seems like it’s not.
+And now we’re coming to this very specific situation where research is done in a very short time — the timeframe we have is not what it normally takes to develop a vaccine, so it’s really research on a speed line. And what we see is that we might make those mistakes. </string>
+    <string name="NatEnter"> Please Enter the National Id to view the
+        requested Medical Report</string>
+    <string name="NatUpdateRecord">please Enter the National Id to update the requested Medical Record </string>
+</resources>

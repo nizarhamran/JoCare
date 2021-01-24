@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medical_permission">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMed"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Med"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Medical Records"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/permission_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/back"
+            android:textAlignment="center" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/medical"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Permission Check"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutMed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_permission"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/signuppage"
+            android:hint="Enter Your Code"
+            android:textColorHint="@color/blue"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/check_permission"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="252dp"
+        android:backgroundTint="@color/blue"
+        android:text="Check"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

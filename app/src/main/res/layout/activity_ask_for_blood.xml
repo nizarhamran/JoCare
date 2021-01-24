@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskForBlood">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/frameMedication"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/ask_blood_back"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:contentDescription="back"
+            android:src="@drawable/abc_vector_test"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Ask For Blood"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AskBloodRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameMedication" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:useCompatPadding="true"
+        app:fabSize="normal"
+        android:elevation="4dp"
+        android:src="@drawable/add"
+        android:id="@+id/addBFab"
+        android:backgroundTint="@color/blue"
+        />
+
+
+</RelativeLayout>

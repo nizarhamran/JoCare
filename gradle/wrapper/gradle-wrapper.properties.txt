@@ -1,0 +1,2 @@
+#Sat Dec 26 17:36:54 EET 2020
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip

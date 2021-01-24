@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311615793916",
+    "project_id": "jocare-9f3a5",
+    "storage_bucket": "jocare-9f3a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311615793916:android:ec77caea669c93ef74c579",
+        "android_client_info": {
+          "package_name": "com.example.jocare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311615793916-dj8q4e3nbpaphl60v6rnbejiag8rr6hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCssOuIM9C-febFRXNBLrIHC3oX4-IG-TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311615793916-dj8q4e3nbpaphl60v6rnbejiag8rr6hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

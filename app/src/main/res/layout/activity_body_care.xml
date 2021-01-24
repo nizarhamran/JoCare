@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BodyCare">
+    <FrameLayout
+        android:id="@+id/frameLayoutBody"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bodyC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/bodyCare"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/bodyBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:paddingTop="2dp"
+            android:textAlignment="center"
+            android:src="@drawable/back"
+            android:contentDescription="@string/hairC"/>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bodycare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutBody" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b1"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b2"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b3"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/b4"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

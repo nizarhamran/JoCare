@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PatientNameV"
+                android:text="Patient Name: "
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Headline"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPatientNameV"
+                android:layout_marginLeft="10dp"
+                android:text="Patient Name"
+                android:textSize="20dp"
+
+                style="@style/TextAppearance.AppCompat.Headline"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PatientBloodtypeV"
+                android:text="Patient Blood Type: "
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getPatientBloodV"
+                android:text="PBloodType"
+                android:textSize="20dp"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BloodtypeNeedV"
+                android:text="Blood Type Needed: "
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getBloodNeededV"
+                android:text="BTypeNeed"
+                android:textSize="20dp"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/UnitsNeedV"
+                android:text="Units Needed: "
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getUnitsNeeded"
+                android:text="Units Needed"
+                android:textSize="20dp"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BloodBankV"
+                android:text="Blood Bank Name: "
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getBloodBankV"
+                android:text="BloodBankName"
+                android:textSize="20dp"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

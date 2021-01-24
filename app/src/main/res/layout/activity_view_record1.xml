@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_record">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/frameViewMedicalRecord"
+        android:background="@color/blue">
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:contentDescription="back"
+            android:src="@drawable/abc_vector_test"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:text="View Medical Record"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="10dp" />
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="378dp"
+        android:layout_height="692dp"
+        android:layout_below="@id/frameViewMedicalRecord"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientNatId"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Nat ID: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientNatId"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="PNatId"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/MedicalPatientNameV"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Name: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/MedicalGetPatientFName"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="PFName"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientLName"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="PLName"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/MedicalPatientDobV"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Dob: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientDob"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="PDob"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientRecentExam"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most Recent Examination: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientRecentExam"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="exam"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientGEstimate"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="General Health Estimate: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientGEstimate"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="estimate"
+                        android:background="@drawable/signuppage"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientHos"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Has he/she ever been Hospitalized: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientHos"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientHeartP"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heart problems prior to Six months:"
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientHeartP"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientEndocar"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History of infective Endocarditis"
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientEndocar"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientHeartDefect"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heart valves or repaired defects: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientHeartDefect"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientPaceMaker"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pacemaker/Implantable defibrillator: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientPaceMaker"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientProsthesis"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Artificial prosthesis: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientProsthesis"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientBloodPressure"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High or low blood pressure: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientBloodPressure"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientStroke"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Has he/she ever had a stroke: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPatientStroke"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientBloodDisorder"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anemia or other blood disorder: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetBloodDisorder"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientInjuries"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Head or neck injuries: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetInjuries"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientSlightCut"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="prolonged bleeding due to slight cut: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetSlightCut"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientEmphysema"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emphysema, shortness of breath: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetEmphysema"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientAsthma"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asthma: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetAsthma"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientKidney"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kidney disease: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetKidney"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientLiver"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Liver disease: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetLiver"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientJaundice"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jaundice: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetJaundice"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientThyroid"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thyroid Diseases: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetThyroid"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientHormone"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hormone Deficiency: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetHormone"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientCholesterol"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High cholesterol: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetCholesterol"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientDiabetes"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diabetes: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetDiabetes"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientUlcer"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach or Duodenal ulcer: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetUlcer"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientIllness"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="he/she being treated for any illness: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetIllness"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientChange"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="change in health in the past 24Hours:"
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetChange"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientWeight"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight management medications: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetWeight"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientFatigued"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Often exhausted or fatigued: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetFatigued"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientHeadaches"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experiencing frequent headaches: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetHeadaches"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientSmoker"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smoker or any tobacco intake: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetSmoker"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientTouchy"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="considered a touchy person: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetTouchy"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientUnhappy"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Often unhappy or depressed: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetUnhappy"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientSupplement"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taking dietary supplement: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetSupplement"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalPatientPregnant"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If female are you Pregnant: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPregnant"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientProstate"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If female any Prostate disorder: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetProstate"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/MedicalPatientPills"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If female-Taking birth control pills: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetPills"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/MedicalPatientTreatment"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any current medical treatments: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetTreatment"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/MedicalPatientMedications"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="List of medications taken recently: "
+                        android:textColor="@color/blue"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MedicalGetMedications"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Ans"
+                        android:background="@drawable/signuppage"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

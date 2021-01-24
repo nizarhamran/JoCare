@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    tools:context=".UserInformation">
+
+    <FrameLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/pinfo"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/userBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:paddingTop="2dp"
+            android:textAlignment="center"
+            android:src="@drawable/back" />
+    </FrameLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="388dp"
+        android:layout_height="690dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/blue"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                app:title="Personal  Information"
+                app:titleEnabled="false"
+                app:toolbarId="@+id/TitleBar">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="357dp"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="25dp"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/FnameHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="First Name"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewFname"
+                        android:layout_width="243dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/LnameHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Last Name"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewLname"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/DobHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="180dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Date Of Birth"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewDob"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="210dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/roleHeader"
+                        android:layout_width="109dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Role"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewRole"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="260dp"
+                        android:background="@drawable/signuppage"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="5dp"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="300dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="National ID"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewNatID"
+                        android:layout_width="243dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="335dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="357dp"
+                    android:layout_height="274dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="430dp"
+                    android:elevation="25dp"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/NatHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Nationality"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewCcpNat"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/signuppage"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CityHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="City"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewCity"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:textColorHint="#808080" />
+
+                    <TextView
+                        android:id="@+id/AddressHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="180dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Address"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="210dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="357dp"
+                    android:layout_height="365dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="725dp"
+                    android:elevation="25dp"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/phoneNum"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Phone Number"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/ViewPhone"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/signuppage"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="50dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ccpPhone"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:importantForAutofill="no"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/CivilHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="CivilStatus"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewCivil"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="130dp"
+                        android:background="@drawable/signuppage"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/EmploymentHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="180dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Employment Status"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewEmp"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="210dp"
+                        android:background="@drawable/signuppage"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/PoHeader"
+                        android:layout_width="182dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Postal Address"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ViewPo"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="290dp"
+                        android:background="@drawable/signuppage"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1050dp">
+
+                </FrameLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

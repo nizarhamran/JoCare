@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyOTP">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="315dp"
+        android:layout_height="368dp"
+        android:layout_marginTop="52dp"
+        android:elevation="25dp"
+        app:cardBackgroundColor="#115571"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="CODE"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/TextMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/oneCode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="one Time Code"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <Button
+            android:id="@+id/OTPCode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textSize="16sp"
+            android:text="Send OTP"
+            android:textColor="@color/blue"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="33dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

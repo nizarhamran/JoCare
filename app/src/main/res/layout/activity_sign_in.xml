@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="335dp"
+        android:layout_height="400dp"
+        app:cardElevation="25dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginRight="45dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/user"
+                android:ems="10"
+                android:hint="@string/national_id"
+                android:inputType="text"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="45dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:drawableLeft="@drawable/lock"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:passwordToggleEnabled="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="#1f456e"
+            android:elevation="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#EDF0F1"
+            android:textSize="16sp"
+            app:cornerRadius="24dp"
+            />
+
+        <TextView
+            android:id="@+id/LoginView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/PleaseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Please log in with your account to continue"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="292dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/forget"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/orView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="315dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="or"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/signUpIn"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="340dp"
+            android:backgroundTint="#1f456e"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign up"
+            android:textColor="#EDF0F1"
+            android:textSize="16sp"
+            app:cornerRadius="24dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

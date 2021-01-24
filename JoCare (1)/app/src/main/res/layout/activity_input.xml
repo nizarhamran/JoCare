@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#115571"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:text="New Reminder"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="#115571"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                app:title="New Reminder"
+                app:titleEnabled="false"
+                app:toolbarId="@+id/TitleBar">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="335dp"
+                    android:layout_height="267dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="30dp"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frame2">
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Medicine Name"
+                        android:textColor="#115571"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="300dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="43dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/addmed"
+                        android:ems="10"
+                        android:hint="Enter the medicine name"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="8dp"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="97dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Notes"
+                        android:textColor="#115571"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/edit_notes"
+                        android:layout_width="300dp"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/addmed"
+                        android:ems="10"
+                        android:hint="Ex: Take after dinner"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="35dp"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="220dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Dosage"
+                        android:textColor="#115571"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/edit_dosage"
+                        android:layout_width="225dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="213dp"
+                        android:layout_marginRight="75dp"
+                        android:background="@drawable/addmed"
+                        android:ems="10"
+                        android:hint="Enter your dosage"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="8dp"
+                        android:textSize="14sp" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="332dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginEnd="31dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Time / Day"
+                    android:textColor="#115571"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="335dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="336dp"
+                    android:layout_marginEnd="29dp"
+                    android:background="@drawable/addmed"
+                    android:paddingTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                <Spinner
+                    android:id="@+id/edit_daytime"
+                    android:layout_width="335dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="336dp"
+                    android:dropDownSelector="@color/material_on_primary_disabled"
+                    android:entries="@array/TimesDay"
+                    android:paddingLeft="15dp"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="@+id/textView14"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="332dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginEnd="29dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Days of the Week"
+                    android:textColor="#115571"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="335dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="416dp"
+                    android:background="@drawable/addmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                <Spinner
+                    android:id="@+id/edit_weekday"
+                    android:layout_width="335dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="416dp"
+                    android:dropDownSelector="@color/material_on_primary_disabled"
+                    android:entries="@array/DaysWeek"
+                    android:paddingStart="10dp"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="@+id/textView5"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="332dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="470dp"
+                    android:layout_marginEnd="29dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Starting From"
+                    android:textColor="#115571"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                <EditText
+                    android:id="@+id/edit_dob"
+                    android:layout_width="335dp"
+                    android:layout_height="44sp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="496dp"
+                    android:padding="10dp"
+                    android:background="@drawable/addmed"
+                    android:ems="10"
+                    android:hint="Enter Date"
+                    android:importantForAutofill="yes"
+                    android:inputType="date" />
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="332dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="550dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="When To Take"
+                    android:textColor="#115571"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/edit_time"
+                    android:layout_width="335dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="578dp"
+                    android:background="@drawable/addmed"
+                    android:hint="When to take"
+                    android:paddingStart="60dp"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="575dp"
+                    app:srcCompat="@drawable/time" />
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#115571"
+                    android:layout_marginTop="640dp"
+                    android:text="Add"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="690dp"
+                    android:textColor="#115571"
+                    android:backgroundTint="#E1E0E0"
+                    android:text="Cancel"
+                    android:textAllCaps="false" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="710dp">
+                </FrameLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

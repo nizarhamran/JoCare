@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecord1">
+
+    <FrameLayout
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Medical Record"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:paddingTop="10dp"
+            android:tint="#FFFFFF"
+            android:translationX="5dp"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="723dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/FnameHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Patient First Name"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtFname"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <TextView
+                android:id="@+id/LnameHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Patient Last Name"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtLname"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <TextView
+                android:id="@+id/DobHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Date Of Birth"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtDob"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="Enter Date"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColorHint="@color/blue" />
+
+            <TextView
+                android:id="@+id/NatIdHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Patients National ID"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtNatId"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="Patients National ID"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+
+            <TextView
+                android:id="@+id/phExaminationHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Most recent physical examination"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTxtExamintaion"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="recent examination"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/blue" />
+
+            <TextView
+                android:id="@+id/EstimateHealthHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="What is your estimate for your general health"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/generalGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChBExcellent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:buttonTint="@color/blue"
+                    android:text="Excellent"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChBGood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="Good"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChBBad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="Bad"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/QuestionHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Do you ever have or have ever had :"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PhoneHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="1-Hospitalization for illness or injury :"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/HospitalizationGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@color/blue"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYHospitalization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:text="Yes"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNHospitalization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="No"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/CivilHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2- Heart problem within the last six months"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/HeartGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYHeartproblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:text="Yes"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNHeartproblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="No"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/EmploymentHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="3- History of infective endocarditis"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+
+            <RadioGroup
+                android:id="@+id/EndocarditisGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYEndocarditis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:text="yes"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNEndocarditis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="No"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="4- Artificial heart valve, Repaired heart defect"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/HearDefectGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYHeartdefect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:text="Yes"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNHeartdefect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/blue"
+                    android:text="No"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="5- Pacemaker or implantable defibrillator"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/PacemakerGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYPacemaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNPacemaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="6- Artificial prosthesis"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/ProsthesisGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYProsthesis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNProsthesis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="7- High or low blood pressure"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/BloodpressureGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYBloodpressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNBloodpressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="8- A stroke"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/StrokeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYStroke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNStroke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="9- Anemia or other blood disorder"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/BloodDisorderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYBloodDisorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNBloodDisorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="10- Head or neck injuries"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/InjuriesGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYInjuries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNInjuries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="11- prolonged bleeding due to slight cut"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/SlightCutGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYSlightCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNSlightCut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="12- Emphysema, shortness of breath"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/BreathGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYBreath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNBreath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="13- Asthma"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/AsthmaGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYAsthma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNAsthma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="14- kidney disease"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/KidneyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYKidney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNKidney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="15- Liver disease"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/LiverGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYLiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNLiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="16- jaundice"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/JaundiceGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYJaundice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNJaundice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="17- Thyroid Diseases"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/ThyroidGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYThyroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNThyroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="18- Hormone Deficiency"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/HormoneGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYHormone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNHormone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="19- High cholesterol"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/CholesterolGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYCholesterol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNCholesterol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="20- Diabetes"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/DiabetesGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYDiabetes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNDiabetes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="21- Stomach or Duodenal ulcer"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+
+            <RadioGroup
+                android:id="@+id/UlcerGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ChYUlcer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+
+                <RadioButton
+                    android:id="@+id/ChNUlcer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/NextBtn"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/blue"
+                app:cornerRadius="24dp" />
+
+        </LinearLayout>
+    </ScrollView>>
+</androidx.constraintlayout.widget.ConstraintLayout>
